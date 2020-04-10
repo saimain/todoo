@@ -1,0 +1,79 @@
+.name_div input::placeholder,
+.email_div input::placeholder,
+.password_div input::placeholder{
+    color: rgba(255, 23, 68, 0.3)
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .login_wrapper,.register_wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .login_div,.register_div{
+        margin-top: 100px;
+    }
+
+    .login_heading span , .register_heading span{
+        font-size: 30px;
+        font-weight: bold;
+        color: #FF1744;
+    }
+
+    .name_div input , .email_div input , .password_div input{
+        border-radius: 10px;
+        border: 1px solid #FF1744;
+        height: 50px;
+        outline: none;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-top: 10px;
+        font-size: 15px;
+        font-weight: bold;
+        color: #FF1744;
+    }
+
+    .login_submit_btn , .register_submit_btn{
+        margin-top: 20px;
+        width: 100%;
+        padding: 10px;
+        background: #FF1744;
+        color: white;
+        outline: none;
+        border: none;
+        border-radius: 10px;
+        font-size: 15px;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+
+    .facebook_login_btn , .facebook_register_btn{
+        background: #3b5998 ;
+        margin-top: 20px;
+        width: 100%;
+        padding: 10px;
+        color: white;
+        outline: none;
+        border: none;
+        border-radius: 10px;
+        font-size: 15px;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}

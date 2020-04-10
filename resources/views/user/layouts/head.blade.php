@@ -12,4 +12,6 @@
     <link rel="stylesheet" href="{{ asset('css/floating_action_btn.css') }}">
     <link rel="stylesheet" href="{{ asset('css/home.css') }}">
     <link rel="stylesheet" href="{{ asset('css/add_new.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/login.css') }}">
+
 </head>
