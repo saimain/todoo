@@ -1,0 +1,171 @@
+/* Removes the clear button from date inputs */
+#date_picker::-webkit-clear-button {
+    display: none;
+}
+
+/* Removes the spin button */
+#date_picker::-webkit-inner-spin-button { 
+    display: none;
+}
+
+/* Always display the drop down caret */
+#date_picker::-webkit-calendar-picker-indicator {
+    color: rgba(255, 23, 68, 0.3);
+}
+
+/* A few custom styles for date inputs */
+#date_picker {
+    appearance: none;
+    -webkit-appearance: none;
+    color: white;
+    font-family: "Helvetica", arial, sans-serif;
+    font-size: 15px;
+    border:1px solid #ecf0f1;
+    background:#FF1744;
+    padding:5px;
+    border-radius: 10px;
+    display: inline-block !important;
+    visibility: visible !important;
+    padding-left: 10px; 
+    padding-right: 10px;
+}
+
+#date_picker, focus {
+    color: white;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+   .todo_wrapper{
+       overflow: hidden;
+   }
+
+    .add_new_overlay{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.3);
+        overflow: hidden;
+    }
+
+    .add_new_div{
+        background: white;
+        width: 90%;
+        height: 500px;
+        border-radius: 10px;
+        position: fixed;
+        top: 100px;
+        overflow: hidden;  
+        box-sizing: border-box; 
+    }
+
+    .form_div input::placeholder , .note_input textarea::placeholder{
+        color: rgba(255, 23, 68, 0.3)
+    }
+
+    .form_div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    .todo_input input , .note_input textarea{
+        border-radius: 10px;
+        border: 1px solid #FF1744;
+        height: 50px;
+        outline: none;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-top: 10px;
+        color: #FF1744;
+    }
+
+    .note_input textarea{
+        padding-top: 10px;
+        height: auto;
+    }
+
+
+    .date_input,.done_input{
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .date_input span{
+        text-transform: uppercase;
+        color: #FF1744;
+        font-size: 13px;
+        font-weight: bold;
+        margin-bottom: 10px;
+        margin-right: 10px;
+       
+    }
+
+    .date_input input{
+        outline: none;
+    }
+
+    .done_input{
+        padding-bottom: 10px;
+    }
+
+    .done_div,.undone_div{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        background: #FF1744;
+        color: white;
+        height: 30px;
+        border-radius: 10px;
+        padding: 5px 10px;
+        margin-right: 10px;
+    }
+
+    .done_div label,.undone_div label{
+        font-weight: bold;
+        font-size: 13px;
+        text-transform: uppercase;
+    }
+    .done_div input,.undone_div input{
+        margin-right: 5px;
+    }
+
+    .todo_submit_btn{
+        width: 100%;
+        padding: 10px;
+        background: #FF1744;
+        color: white;
+        outline: none;
+        border: none;
+        border-radius: 10px;
+        font-size: 15px;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+  
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}

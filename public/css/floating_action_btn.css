@@ -1,0 +1,36 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.floating_action_btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: 10px;
+    bottom: 40px;
+    background: white;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 20px;
+    color: #FF1744;
+    font-weight: bold;
+    outline: none;
+}
+
+.floating_action_btn_icon{
+    font-size: 15px;
+}
+
+.floating_action_btn_text{
+    font-weight: bold;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 15px;
+
+}
