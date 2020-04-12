@@ -27,6 +27,6 @@ class TodoController extends Controller
         $new_todo->status = $request->status;
         $new_todo->save();
 
-        return 'saved';
+        return redirect('/');
     }
 }
