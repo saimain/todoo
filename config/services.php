@@ -21,7 +21,7 @@ return [
     'facebook' => [
         'client_id' => '2851018678316605',
         'client_secret' => '350298cd50a32a652f66f47cd1a38b2e',
-        'redirect' => 'http://localhost:8000/login/facebook/callback',
+        'redirect' => 'http://todoo.devsm.net/login/facebook/callback',
     ],
 
 ];
