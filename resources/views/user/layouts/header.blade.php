@@ -14,44 +14,47 @@
             <div class="line"></div>
 
             <div class="profile_card">
-                <div class="profile">
+                {{-- <div class="profile">
                     <img class="profile_img" src="{{ asset('sources/users/profiles/person.jpeg') }}" alt="">
-                </div>
-                <div class="profile_info">
-                    <span class="profile_name">Simon Robben</span>
-                    <span class="profile_work">Programmer at Google</span>
-                </div>
+            </div> --}}
+            <div class="profile_info">
+                <span class="profile_name">{{ Auth::user()->name }}</span>
+                <span class="profile_work">{{ Auth::user()->email }}</span>
             </div>
         </div>
-        <div class="menu_div">
-            <span class="menu_label">Menu</span>
-            <div class="line"></div>
+    </div>
+    <div class="menu_div">
+        <span class="menu_label">Menu</span>
+        <div class="line"></div>
 
-            <div class="menu_item_div_active">
-                <span class="material-icons menu_item_icon">
-                    fiber_manual_record
-                </span>
-                <span class="menu_item_label">My Todo list</span>
-            </div>
-            <div class="menu_item_div">
-                <span class="material-icons menu_item_icon">
-                    fiber_manual_record
-                </span>
-                <span class="menu_item_label">My Team</span>
-            </div>
-            <div class="menu_item_div">
-                <span class="material-icons menu_item_icon">
-                    fiber_manual_record
-                </span>
-                <span class="menu_item_label">Setting</span>
-            </div>
-            <div class="menu_item_div">
-                <span class="material-icons menu_item_icon">
-                    fiber_manual_record
-                </span>
-                <span class="menu_item_label">Log out</span>
-            </div>
+        <div class="menu_item_div_active">
+            <span class="material-icons menu_item_icon">
+                fiber_manual_record
+            </span>
+            <span class="menu_item_label">My Todo list</span>
         </div>
+        <div class="menu_item_div">
+            <span class="material-icons menu_item_icon">
+                fiber_manual_record
+            </span>
+            <span class="menu_item_label">My Team</span>
+        </div>
+        <div class="menu_item_div">
+            <span class="material-icons menu_item_icon">
+                fiber_manual_record
+            </span>
+            <span class="menu_item_label">Setting</span>
+        </div>
+        <form action="{{ route('logout') }}" method="POST" id="logout_form">
+            @csrf
+        </form>
+        <div class="menu_item_div">
+            <span class="material-icons menu_item_icon">
+                fiber_manual_record
+            </span>
+            <span class="menu_item_label">Log out</span>
+        </div>
+    </div>
     </div>
 
 

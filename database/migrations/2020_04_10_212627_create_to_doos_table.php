@@ -15,7 +15,14 @@ class CreateToDoosTable extends Migration
     {
         Schema::create('to_doos', function (Blueprint $table) {
             $table->id();
+            $table->unsignedBigInteger('user_id')->index();
+            $table->string('todo');
+            $table->text('note');
+            $table->string('date');
+            $table->boolean('status');
+            $table->softDeletes();
             $table->timestamps();
+            $table->foreign('user_id')->references('id')->on('users');
         });
     }
 

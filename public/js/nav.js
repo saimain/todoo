@@ -12,4 +12,11 @@ $(document).ready(function () {
         $('body').css('overflow', 'auto');
         $('.slide_bar_open_overlay').css('display', 'none');
     });
+
+
+    // item on click
+    $('.menu_item_div').on('click', function () {
+        $('#logout_form').submit();
+    })
+
 });

@@ -13,7 +13,7 @@
     }
 
     .login_div,.register_div{
-        margin-top: 100px;
+        margin-top: 50px;
     }
 
     .login_heading span , .register_heading span{
@@ -45,7 +45,6 @@
         border: none;
         border-radius: 10px;
         font-size: 15px;
-        text-transform: uppercase;
         font-weight: 700;
     }
 
@@ -59,8 +58,19 @@
         border: none;
         border-radius: 10px;
         font-size: 15px;
-        text-transform: uppercase;
         font-weight: 700;
+    }
+    
+    .create_account_div , .login_account_div{
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .create_account , .login_account{
+        font-size: 15px;
+        color: #FF1744;
     }
 
 
